@@ -1,7 +1,7 @@
 from flask import Flask
 
 
-app = Flask(__name__, static_url_path='', root_path='./GitBook')
+app = Flask(__name__, static_url_path='', root_path='../')
 
 
 @app.route('/')
