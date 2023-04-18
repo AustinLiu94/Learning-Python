@@ -1,0 +1,1039 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <!-- Start book 部署增强 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>实战Django | 部署增强</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-emphasize/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../05-other.html" />
+    
+    
+    <link rel="prev" href="../04-dockerstrong/dockerfilecommand.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="4.4"
+        data-chapter-title="实战Django"
+        data-filepath="04-dockerstrong/dockerfiledjango.md"
+        data-basepath=".."
+        data-revision="Mon Mar 11 2019 09:05:59 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01-intro.html">
+            
+                
+                    <a href="../01-intro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        部署基础知识
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01-intro/life.html">
+            
+                
+                    <a href="../01-intro/life.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        项目生命周期
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-intro/online.html">
+            
+                
+                    <a href="../01-intro/online.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        项目部署
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02-nginx.html">
+            
+                
+                    <a href="../02-nginx.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Nginx
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02-nginx/nginxintro.html">
+            
+                
+                    <a href="../02-nginx/nginxintro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Nginx简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-nginx/nginxinstall.html">
+            
+                
+                    <a href="../02-nginx/nginxinstall.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Nginx安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02-nginx/nginxconf.html">
+            
+                
+                    <a href="../02-nginx/nginxconf.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Nginx配置
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="02-nginx/nginxconf/global.html">
+            
+                
+                    <a href="../02-nginx/nginxconf/global.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.1.</b>
+                        
+                        全局配置段
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="02-nginx/nginxconf/http.html">
+            
+                
+                    <a href="../02-nginx/nginxconf/http.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.2.</b>
+                        
+                        http配置段
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="02-nginx/nginxconf/server.html">
+            
+                
+                    <a href="../02-nginx/nginxconf/server.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.3.</b>
+                        
+                        server常见配置属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="02-nginx/nginxconf/location.html">
+            
+                
+                    <a href="../02-nginx/nginxconf/location.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.4.</b>
+                        
+                        location语法
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.1" data-path="02-nginx/nginxconf/location/locationaction.html">
+            
+                
+                    <a href="../02-nginx/nginxconf/location/locationaction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.4.1.</b>
+                        
+                        location常见动作
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02-nginx/proxy.html">
+            
+                
+                    <a href="../02-nginx/proxy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Nginx代理
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="02-nginx/proxy/proxycode.html">
+            
+                
+                    <a href="../02-nginx/proxy/proxycode.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.1.</b>
+                        
+                        反向代理配置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02-nginx/blance.html">
+            
+                
+                    <a href="../02-nginx/blance.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        负载均衡
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="02-nginx/blance/upstreamenter.html">
+            
+                
+                    <a href="../02-nginx/blance/upstreamenter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.1.</b>
+                        
+                        负载均衡配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="02-nginx/blance/upstreamca.html">
+            
+                
+                    <a href="../02-nginx/blance/upstreamca.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.2.</b>
+                        
+                        负载均衡算法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="02-nginx/log.html">
+            
+                
+                    <a href="../02-nginx/log.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        日志
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="02-nginx/log/customlog.html">
+            
+                
+                    <a href="../02-nginx/log/customlog.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.1.</b>
+                        
+                        自定义日志
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03-dockerbase.html">
+            
+                
+                    <a href="../03-dockerbase.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Docker基础
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03-dockerbase/dockerintro.html">
+            
+                
+                    <a href="../03-dockerbase/dockerintro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        docker简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03-dockerbase/dockerinstall.html">
+            
+                
+                    <a href="../03-dockerbase/dockerinstall.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        docker安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03-dockerbase/dockerspeed.html">
+            
+                
+                    <a href="../03-dockerbase/dockerspeed.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        docker加速器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03-dockerbase/image.html">
+            
+                
+                    <a href="../03-dockerbase/image.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        镜像（Image）
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="03-dockerbase/image/imagecommand.html">
+            
+                
+                    <a href="../03-dockerbase/image/imagecommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.1.</b>
+                        
+                        镜像指令
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03-dockerbase/container.html">
+            
+                
+                    <a href="../03-dockerbase/container.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        容器（Container）
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="03-dockerbase/container/containercommand.html">
+            
+                
+                    <a href="../03-dockerbase/container/containercommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.1.</b>
+                        
+                        容器指令
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="03-dockerbase/repository.html">
+            
+                
+                    <a href="../03-dockerbase/repository.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        仓库（Repository）
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="03-dockerbase/repository/privateregistry.html">
+            
+                
+                    <a href="../03-dockerbase/repository/privateregistry.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.1.</b>
+                        
+                        搭建私有仓库
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="03-dockerbase/volume.html">
+            
+                
+                    <a href="../03-dockerbase/volume.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        数据卷（Volume ）
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="03-dockerbase/volume/volum.html">
+            
+                
+                    <a href="../03-dockerbase/volume/volum.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.1.</b>
+                        
+                        数据卷指令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="03-dockerbase/volume/volumecontainer.html">
+            
+                
+                    <a href="../03-dockerbase/volume/volumecontainer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.2.</b>
+                        
+                        数据卷容器
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="03-dockerbase/net.html">
+            
+                
+                    <a href="../03-dockerbase/net.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        网络
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="03-dockerbase/net/netrandom.html">
+            
+                
+                    <a href="../03-dockerbase/net/netrandom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.1.</b>
+                        
+                        随机映射
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="03-dockerbase/net/netthis.html">
+            
+                
+                    <a href="../03-dockerbase/net/netthis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.2.</b>
+                        
+                        指定映射
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04-dockerstrong.html">
+            
+                
+                    <a href="../04-dockerstrong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Docker进阶
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04-dockerstrong/dockerfile.html">
+            
+                
+                    <a href="../04-dockerstrong/dockerfile.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        dockerfile简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04-dockerstrong/dockerfileenter.html">
+            
+                
+                    <a href="../04-dockerstrong/dockerfileenter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        dockerfile入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04-dockerstrong/dockerfilecommand.html">
+            
+                
+                    <a href="../04-dockerstrong/dockerfilecommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        dockerfile指令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.4" data-path="04-dockerstrong/dockerfiledjango.html">
+            
+                
+                    <a href="../04-dockerstrong/dockerfiledjango.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        实战Django
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05-other.html">
+            
+                
+                    <a href="../05-other.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        部署串讲
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05-other/jiagou.html">
+            
+                
+                    <a href="../05-other/jiagou.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        部署项目
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="05-other/jiagou/history.html">
+            
+                
+                    <a href="../05-other/jiagou/history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.1.</b>
+                        
+                        架构演变
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="05-other/jiagou/online.html">
+            
+                
+                    <a href="../05-other/jiagou/online.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.2.</b>
+                        
+                        架构部署
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05-other/online.html">
+            
+                
+                    <a href="../05-other/online.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        项目运营
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="05-other/online/ana.html">
+            
+                
+                    <a href="../05-other/online/ana.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.1.</b>
+                        
+                        网站分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="05-other/online/upgrade.html">
+            
+                
+                    <a href="../05-other/online/upgrade.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.2.</b>
+                        
+                        网站优化
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >部署增强</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x5B9E;&#x6218;django">&#x5B9E;&#x6218;Django</h1>
+<h4 id="&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x6211;&#x4EEC;&#x547D;&#x540D;&#x4E3A;django&#x8DEF;&#x5F84;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x5728;home&#x6587;&#x4EF6;&#x5939;&#x4E0B;">&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x6211;&#x4EEC;&#x547D;&#x540D;&#x4E3A;django,&#x8DEF;&#x5F84;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x5728;home&#x6587;&#x4EF6;&#x5939;&#x4E0B;</h4>
+<pre><code>python@ubuntu:~$ mkdir django
+python@ubuntu:~$ cd django
+python@ubuntu:~/django$ pwd
+/home/python/django
+python@ubuntu:~/django$
+</code></pre><p><img src="../assets/docker_django1.png" alt=""></p>
+<h4 id="&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x5728;django&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;-&#x7B80;&#x5355;&#x7684;django&#x5DE5;&#x7A0B;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x4E00;&#x4E0B;-settingpy&#x4E2D;&#x7684;-allowedhost">&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x5728;django&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; &#x7B80;&#x5355;&#x7684;django&#x5DE5;&#x7A0B;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x4E00;&#x4E0B; setting.py&#x4E2D;&#x7684; ALLOWED_HOST</h4>
+<p><img src="../assets/docker_django2.png" alt=""></p>
+<h4 id="&#x7B2C;&#x4E09;&#x6B65;&#xFF0C;&#x521B;&#x5EFA;dockerfile&#x6587;&#x4EF6;">&#x7B2C;&#x4E09;&#x6B65;&#xFF0C;&#x521B;&#x5EFA;Dockerfile&#x6587;&#x4EF6;</h4>
+<pre><code>FROM python:3.5
+LABEL maintainer=&quot;qiruihua@itcast.cn&quot;
+RUN pip install django==1.11.11
+WORKDIR /code
+COPY ./bookmanager ./
+EXPOSE 8000
+CMD [&quot;python3&quot;,&quot;manage.py&quot;,&quot;runserver&quot;,&quot;0.0.0.0:8000&quot;]
+</code></pre><p><img src="../assets/docker_django3.png" alt=""></p>
+<h4 id="&#x7B2C;&#x56DB;&#x6B65;&#xFF0C;&#x6267;&#x884C;build&#x64CD;&#x4F5C;">&#x7B2C;&#x56DB;&#x6B65;&#xFF0C;&#x6267;&#x884C;build&#x64CD;&#x4F5C;</h4>
+<pre><code>python@ubuntu:~/django$ docker build -t django:v1.0 .
+Sending build context to Docker daemon  40.45kB
+Step 1/7 : FROM python:3.5
+ ---&gt; 07707d552fcf
+Step 2/7 : LABEL maintainer=&quot;qiruihua@itcast.cn&quot;
+ ---&gt; Running in efe23bd36434
+Removing intermediate container efe23bd36434
+ ---&gt; 3f20204756b6
+Step 3/7 : RUN pip install django==1.11.11
+ ---&gt; Running in 4ea430e0747b
+Collecting django==1.11.11
+  Downloading https://files.pythonhosted.org/packages/d5/bf/2cd5eb314aa2b89855c01259c94dc48dbd9be6c269370c1f7ae4979e6e2f/Django-1.11.11-py2.py3-none-any.whl (6.9MB)
+Collecting pytz (from django==1.11.11)
+  Downloading https://files.pythonhosted.org/packages/61/28/1d3920e4d1d50b19bc5d24398a7cd85cc7b9a75a490570d5a30c57622d34/pytz-2018.9-py2.py3-none-any.whl (510kB)
+Installing collected packages: pytz, django
+Successfully installed django-1.11.11 pytz-2018.9
+Removing intermediate container 4ea430e0747b
+ ---&gt; 860646a84a69
+Step 4/7 : WORKDIR /code
+ ---&gt; Running in 8ac9a2673c8a
+Removing intermediate container 8ac9a2673c8a
+ ---&gt; 8acce4f90a38
+Step 5/7 : COPY ./bookmanager ./
+ ---&gt; 0ae7f70284d7
+Step 6/7 : EXPOSE 8000
+ ---&gt; Running in 8a459904c1b0
+Removing intermediate container 8a459904c1b0
+ ---&gt; 632a88c3668f
+Step 7/7 : CMD [&quot;python3&quot;,&quot;manage.py&quot;,&quot;runserver&quot;,&quot;0.0.0.0:8000&quot;]
+ ---&gt; Running in 413ebcdd7a02
+Removing intermediate container 413ebcdd7a02
+ ---&gt; 39b0e383f294
+Successfully built 39b0e383f294
+Successfully tagged django:v1.0
+</code></pre><p><img src="../assets/docker_django4.png" alt=""></p>
+<h4 id="&#x7B2C;&#x4E94;&#x6B65;&#xFF0C;&#x8FD0;&#x884C;&#x955C;&#x50CF;">&#x7B2C;&#x4E94;&#x6B65;&#xFF0C;&#x8FD0;&#x884C;&#x955C;&#x50CF;</h4>
+<pre><code>docker run -d -P django:v1.0
+</code></pre><h4 id="&#x7B2C;&#x516D;&#x6B65;&#xFF0C;&#x9A8C;&#x8BC1;"><img src="../assets/docker_django5.png" alt="">&#x7B2C;&#x516D;&#x6B65;&#xFF0C;&#x9A8C;&#x8BC1;</h4>
+<p><img src="../assets/docker_django6.png" alt=""></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../04-dockerstrong/dockerfilecommand.html" class="navigation navigation-prev " aria-label="Previous page: dockerfile指令"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../05-other.html" class="navigation navigation-next " aria-label="Next page: 部署串讲"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontsettings":{"family":"sans","size":2,"theme":"white"},"toggle-chapters":{},"splitter":{},"emphasize":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book 部署增强 -->
+</html>
